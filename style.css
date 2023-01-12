@@ -7,6 +7,17 @@ body {
     box-sizing: border-box;
 }
 
+.gif {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.gif img {
+    width: 100px;
+}
+
 .header {
     display: flex;
     padding: 25px 0;
