@@ -457,7 +457,6 @@ body {
 }
 
 .coffee-magazine-desc p {
-    text-align: center;
     color: #8a8a92;
     font-size: 16px;
     line-height: 28px;
@@ -1144,6 +1143,10 @@ body {
 
     .coffee-magazine-desc {
         width: 100%;
+    }
+
+    .coffee-magazine-desc {
+        text-align: center;
     }
 
     .lifestyle-stories {
