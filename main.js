@@ -13,3 +13,24 @@ document.addEventListener("click", (e) => {
     }
   }
 });
+
+const $$ = document.querySelectorAll.bind(document);
+const $ = document.querySelector.bind(document);
+
+var tabs = $$(".header-item");
+var line = $(".header-tabs .line");
+
+var tab = $(".header-item.active");
+
+line.style.width = tab.offsetWidth + "px";
+line.style.left = tab.offsetLeft + "px";
+
+tabs.forEach(function (tab) {
+  tab.addEventListener("click", function () {
+    $(".header-item.active").classList.remove("active");
+    this.classList.add("active");
+
+    line.style.width = this.offsetWidth + "px";
+    line.style.left = this.offsetLeft + "px";
+  });
+});

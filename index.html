@@ -1,436 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/coffee_style/public/image/favicon/waifu1.jpg" sizes="16x16">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+      rel="icon"
+      href="/coffee_style/public/image/favicon/waifu1.jpg"
+      sizes="16x16"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Coffee</title>
-    <link rel="icon" type="image/x-icon"
-        href="https://image.pngaaa.com/375/1697375-middle.png">
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://image.pngaaa.com/375/1697375-middle.png"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <div class="header-title">
-            <h2 class="header-coffee-style">CoffeeStyle.</h2>
-        </div>
+      <div class="header-title">
+        <h2 class="header-coffee-style">CoffeeStyle.</h2>
+      </div>
+      <div class="header-tabs">
         <ul id="header-list-slide" class="header-list">
-
-            <li class="header-item">Home</li>
-            <li class="header-item">Our Products</li>
-            <li class="header-item">Blog</li>
-            <li class="header-item">About</li>
-            <li class="header-item">Contact</li>
-            <li class="header-item">StyleGuide</li>
-
+          <li class="header-item active">Home</li>
+          <li class="header-item">Our Products</li>
+          <li class="header-item">Blog</li>
+          <li class="header-item">About</li>
+          <li class="header-item">Contact</li>
+          <li class="header-item">StyleGuide</li>
         </ul>
-        <div class="header-cart">
+        <div class="line"></div>
+      </div>
+      <div class="header-cart">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          style="width: 20px; height: 20px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+          />
+        </svg>
+        <span class="header-cart-text">Cart</span>
+        <span class="header-cart-number">0</span>
+      </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor"
-                style=" width: 20px; height: 20px;">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-            </svg>
-            <span class="header-cart-text">Cart</span>
-            <span class="header-cart-number">0</span>
-        </div>
-
-        <div id="bin-header-menu-icon" class="header-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor"
-                style="width: 25px; height: 25px; padding-top: 3px;">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </div>
-
+      <div id="bin-header-menu-icon" class="header-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          style="width: 25px; height: 25px; padding-top: 3px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
     </div>
 
     <div class="coffee-mug">
-
-        <div class="coffee-mug-background">
-            <img class="coffee-mug-image"
-                src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a58aaecdfba_Header-Pic.jpg"
-                alt="">
-            <div class="gif">
-                <img src="./image/Tsukasa-Dance-Sticker-Tsukasa--unscreen.gif" alt="">
-            </div>
-            <div class="coffee-mug-cover"></div>
-            <div class="coffee-mug-desc">
-                <h2 class="coffee-mug-desc-title">Best place to buy design</h2>
-                <h1 class="coffee-mug-desc-mugs">Coffee Mugs</h1>
-                <p class="coffee-mug-desc-para">The most versatile furniture system ever
-                    created. Designed to fit your
-                    life, made to move and grow.</p>
-                <div class="coffee-mug-btn">Explore Our Products</div>
-            </div>
+      <div class="coffee-mug-background">
+        <img
+          class="coffee-mug-image"
+          src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a58aaecdfba_Header-Pic.jpg"
+          alt=""
+        />
+        <div class="gif">
+          <img
+            src="./image/Tsukasa-Dance-Sticker-Tsukasa--unscreen.gif"
+            alt=""
+          />
         </div>
-
+        <div class="coffee-mug-cover"></div>
+        <div class="coffee-mug-desc">
+          <h2 class="coffee-mug-desc-title">Best place to buy design</h2>
+          <h1 class="coffee-mug-desc-mugs">Coffee Mugs</h1>
+          <p class="coffee-mug-desc-para">
+            The most versatile furniture system ever created. Designed to fit
+            your life, made to move and grow.
+          </p>
+          <div class="coffee-mug-btn">Explore Our Products</div>
+        </div>
+      </div>
     </div>
     <div class="content">
+      <div class="coffee-story">
+        <h2 class="coffee-story-title">
+          Even the all-powerful Pointing has no control about the blind texts.
+        </h2>
+        <p class="coffee-story-para">
+          It is a paradisematic country, in which roasted parts of sentences fly
+          into your mouth. Even the all-powerful Pointing has no control about
+          the blind texts it is an almost unorthographic life One day however a
+          small line of blind text by the name of Lorem Ipsum decided to leave
+          for the far World of Grammar.
+        </p>
+        <a href="#" class="coffee-story-read">Read the full Story</a>
+      </div>
 
-        <div class="coffee-story">
-            <h2 class="coffee-story-title">Even the all-powerful Pointing has no control
-                about
-                the blind texts.</h2>
-            <p class="coffee-story-para">It is a paradisematic country, in which roasted
-                parts
-                of sentences fly into your mouth. Even the all-powerful Pointing has no
-                control about the blind texts it is an almost unorthographic life One day
-                however a small line of blind text by the name of Lorem Ipsum decided to
-                leave
-                for the far World of Grammar.</p>
-            <a href="#" class="coffee-story-read">Read the full Story</a>
-        </div>
+      <div class="feature-mug">
+        <span></span>
+        <span>Feature Mugs</span>
+        <span></span>
+      </div>
 
-        <div class="feature-mug">
-            <span></span>
-            <span>Feature Mugs</span>
-            <span></span>
-        </div>
-
-        <div class="feature-coffee">
-
-            <div class="feature-coffee-container">
-                <div class="feature-coffee-glass">
-                    <div class="feature-coffee-hover">
-                        <img class="feature-coffee-image"
-                            src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg"
-                            alt="">
-                        <span class="explore-mug">Explore Mug</span>
-                    </div>
-                </div>
-                <span class="feature-coffee-name">Pink Premium Ceramic</span>
-                <span class="feature-coffee-price">$ 99.00 USD</span>
+      <div class="feature-coffee">
+        <div class="feature-coffee-container">
+          <div class="feature-coffee-glass">
+            <div class="feature-coffee-hover">
+              <img
+                class="feature-coffee-image"
+                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg"
+                alt=""
+              />
+              <span class="explore-mug">Explore Mug</span>
             </div>
+          </div>
+          <span class="feature-coffee-name">Pink Premium Ceramic</span>
+          <span class="feature-coffee-price">$ 99.00 USD</span>
+        </div>
 
-            <div class="feature-coffee-container">
-                <div class="feature-coffee-glass">
-                    <div class="feature-coffee-hover">
-                        <img class="feature-coffee-image"
-                            src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a25acecdfd6_jakub-dziubak-394720-unsplash.jpg"
-                            alt="">
-                        <span class="explore-mug">Explore Mug</span>
-                        <span class="On-sale">On Sale.</span>
-                    </div>
-                </div>
-                <span class="feature-coffee-name">Pink Premium Ceramic</span>
-                <div class="feature-coffee-sale">
-                    <span>$50.00</span>
-                    <span class="feature-coffee-price">$ 69.00 USD</span>
-                </div>
+        <div class="feature-coffee-container">
+          <div class="feature-coffee-glass">
+            <div class="feature-coffee-hover">
+              <img
+                class="feature-coffee-image"
+                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a25acecdfd6_jakub-dziubak-394720-unsplash.jpg"
+                alt=""
+              />
+              <span class="explore-mug">Explore Mug</span>
+              <span class="On-sale">On Sale.</span>
             </div>
-
+          </div>
+          <span class="feature-coffee-name">Pink Premium Ceramic</span>
+          <div class="feature-coffee-sale">
+            <span>$50.00</span>
+            <span class="feature-coffee-price">$ 69.00 USD</span>
+          </div>
         </div>
+      </div>
 
-        <div class="feature-mug">
-            <span></span>
-            <span>More Products</span>
-            <span></span>
-        </div>
+      <div class="feature-mug">
+        <span></span>
+        <span>More Products</span>
+        <span></span>
+      </div>
 
-        <div class="more-product">
-            <div class="feature-coffee-glass more-product-glass">
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                            <span class="On-sale">On Sale.</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">Red Love Cup</span>
-                    <div class="feature-coffee-sale">
-                        <span>$25.00</span>
-                        <span class="feature-coffee-price">$ 37.00 USD</span>
-                    </div>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a0c09ece01c_steve-harvey-523112-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                            <span class="On-sale">On Sale.</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">Black Tea Cup</span>
-                    <div class="feature-coffee-sale">
-                        <span>$15.00</span>
-                        <span class="feature-coffee-price">$ 29.00 USD</span>
-                    </div>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a223decdff8_ronaldo-arthur-vidal-66241-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">PB&W Essentials Mug</span>
-                    <span class="feature-coffee-price">$ 19.00 USD</span>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6d09ece015_rocknwool-690694-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">Winter Style Mug</span>
-                    <span class="feature-coffee-price">$ 25.00 USD</span>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7ae493ece012_rawpixel-645289-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">Ceramic Tea</span>
-                    <span class="feature-coffee-price">$ 46.00 USD</span>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a8461ece016_nathan-dumlao-643391-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">No Handle Bar Cup</span>
-                    <span class="feature-coffee-price">$ 34.00 USD</span>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a1db2ece009_natanja-grun-600152-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">Espresso Cup by Mugs.co</span>
-                    <span class="feature-coffee-price">$ 25.00 USD</span>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">Pink Premium Ceramic</span>
-                    <span class="feature-coffee-price">$ 99.00 USD</span>
-                </div>
-
-                <div class="feature-coffee-container more-product-container">
-                    <div class="feature-coffee-glass">
-                        <div class="feature-coffee-hover">
-                            <img class="feature-coffee-image more-product-image"
-                                src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a81a6ecdfe7_levi-guzman-1077850-unsplash.jpg"
-                                alt="">
-                            <span class="explore-mug">Explore Mug</span>
-                        </div>
-                    </div>
-                    <span class="feature-coffee-name">Summer Designer Cup</span>
-                    <span class="feature-coffee-price">$ 29.00 USD</span>
-                </div>
-
+      <div class="more-product">
+        <div class="feature-coffee-glass more-product-glass">
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+                <span class="On-sale">On Sale.</span>
+              </div>
             </div>
-        </div>
-        <div class="feature-mug">
-            <span></span>
-            <span>Buy 2 Mugs And Get A Coffee Magazine Free</span>
-            <span></span>
-        </div>
-
-        <div class="coffee-magazine">
-            <div class="coffee-magazine-bg">
-                <div class="coffee-magazine-book">
-                    <div class="coffee-magazine-book-item">
-
-                    </div>
-                </div>
-
-                <div class="coffee-magazine-cup">
-                    <div class="coffee-mazine-cup-item">
-
-                    </div>
-                    <div class="coffee-mazine-cup-item">
-
-                    </div>
-                </div>
+            <span class="feature-coffee-name">Red Love Cup</span>
+            <div class="feature-coffee-sale">
+              <span>$25.00</span>
+              <span class="feature-coffee-price">$ 37.00 USD</span>
             </div>
+          </div>
 
-            <div class="coffee-magazine-desc">
-                <h2 class="coffee-magazine-desc-title">Premium Offer</h2>
-                <h1 class="coffee-magazine-desc-magazine">Get Our Coffee Magazine</h1>
-                <p class="coffee-magazine-desc-para">The most versatile furniture system
-                    ever created. Designed to fit your
-                    life.</p>
-                <span class="coffee-magazine-desc-btn">Start Shopping</span>
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a0c09ece01c_steve-harvey-523112-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+                <span class="On-sale">On Sale.</span>
+              </div>
             </div>
+            <span class="feature-coffee-name">Black Tea Cup</span>
+            <div class="feature-coffee-sale">
+              <span>$15.00</span>
+              <span class="feature-coffee-price">$ 29.00 USD</span>
+            </div>
+          </div>
 
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a223decdff8_ronaldo-arthur-vidal-66241-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+              </div>
+            </div>
+            <span class="feature-coffee-name">PB&W Essentials Mug</span>
+            <span class="feature-coffee-price">$ 19.00 USD</span>
+          </div>
+
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6d09ece015_rocknwool-690694-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+              </div>
+            </div>
+            <span class="feature-coffee-name">Winter Style Mug</span>
+            <span class="feature-coffee-price">$ 25.00 USD</span>
+          </div>
+
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7ae493ece012_rawpixel-645289-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+              </div>
+            </div>
+            <span class="feature-coffee-name">Ceramic Tea</span>
+            <span class="feature-coffee-price">$ 46.00 USD</span>
+          </div>
+
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a8461ece016_nathan-dumlao-643391-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+              </div>
+            </div>
+            <span class="feature-coffee-name">No Handle Bar Cup</span>
+            <span class="feature-coffee-price">$ 34.00 USD</span>
+          </div>
+
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a1db2ece009_natanja-grun-600152-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+              </div>
+            </div>
+            <span class="feature-coffee-name">Espresso Cup by Mugs.co</span>
+            <span class="feature-coffee-price">$ 25.00 USD</span>
+          </div>
+
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+              </div>
+            </div>
+            <span class="feature-coffee-name">Pink Premium Ceramic</span>
+            <span class="feature-coffee-price">$ 99.00 USD</span>
+          </div>
+
+          <div class="feature-coffee-container more-product-container">
+            <div class="feature-coffee-glass">
+              <div class="feature-coffee-hover">
+                <img
+                  class="feature-coffee-image more-product-image"
+                  src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a81a6ecdfe7_levi-guzman-1077850-unsplash.jpg"
+                  alt=""
+                />
+                <span class="explore-mug">Explore Mug</span>
+              </div>
+            </div>
+            <span class="feature-coffee-name">Summer Designer Cup</span>
+            <span class="feature-coffee-price">$ 29.00 USD</span>
+          </div>
+        </div>
+      </div>
+      <div class="feature-mug">
+        <span></span>
+        <span>Buy 2 Mugs And Get A Coffee Magazine Free</span>
+        <span></span>
+      </div>
+
+      <div class="coffee-magazine">
+        <div class="coffee-magazine-bg">
+          <div class="coffee-magazine-book">
+            <div class="coffee-magazine-book-item"></div>
+          </div>
+
+          <div class="coffee-magazine-cup">
+            <div class="coffee-mazine-cup-item"></div>
+            <div class="coffee-mazine-cup-item"></div>
+          </div>
         </div>
 
+        <div class="coffee-magazine-desc">
+          <h2 class="coffee-magazine-desc-title">Premium Offer</h2>
+          <h1 class="coffee-magazine-desc-magazine">Get Our Coffee Magazine</h1>
+          <p class="coffee-magazine-desc-para">
+            The most versatile furniture system ever created. Designed to fit
+            your life.
+          </p>
+          <span class="coffee-magazine-desc-btn">Start Shopping</span>
+        </div>
+      </div>
     </div>
     <div class="parallax-section"></div>
 
     <div class="lifestyle-stories">
-        <div class="feature-mug">
-            <span></span>
-            <span>Behind the mug, Lifestyle Stories</span>
-            <span></span>
+      <div class="feature-mug">
+        <span></span>
+        <span>Behind the mug, Lifestyle Stories</span>
+        <span></span>
+      </div>
+      <div class="life-stories-mug">
+        <div class="life-stories-container">
+          <div class="add">
+            <div class="life-storie-image"></div>
+            <span class="explore-mug">Read The Full Story</span>
+          </div>
+          <div class="add-2">
+            <h2 class="life-storie-title">
+              Health Check: why do I get a headache when I haven't had my
+              coffee?
+            </h2>
+            <p class="life-storie-para">
+              It is a paradisematic country, in which roasted parts of sentences
+              fly into your mouth.
+            </p>
+            <span class="life-stories-date">October 9, 2018</span>
+          </div>
         </div>
-        <div class="life-stories-mug">
-            <div class="life-stories-container">
-                <div class="add">
-                    <div class="life-storie-image">
-                    </div>
-                    <span class="explore-mug">Read The Full Story</span>
-                </div>
-                <div class="add-2">
-                    <h2 class="life-storie-title">Health Check: why do I get a headache
-                        when I
-                        haven't had my coffee?</h2>
-                    <p class="life-storie-para">
-                        It is a paradisematic country, in which roasted parts of sentences
-                        fly
-                        into your mouth.
-                    </p>
-                    <span class="life-stories-date">October 9, 2018</span>
-                </div>
-            </div>
-            <div class="life-stories-container">
-                <div class="add">
-                    <div class="life-storie-image life-storie-image-2">
-                    </div>
-                    <span class="explore-mug">Read The Full Story</span>
-                </div>
-                <div class="add-2">
-                    <h2 class="life-storie-title">How long does a cup of coffee keep you
-                        awake?</h2>
-                    <p class="life-storie-para">
-                        It is a paradisematic country, in which roasted parts. Vel qui et
-                        ad voluptatem.
-                    </p>
-                    <span class="life-stories-date">October 9, 2018</span>
-                </div>
-            </div>
-            <div class="life-stories-container">
-                <div class="add">
-                    <div class="life-storie-image life-storie-image-3">
-                    </div>
-                    <span class="explore-mug">Read The Full Story</span>
-                </div>
-                <div class="add-2">
-                    <h2 class="life-storie-title">Recent research suggests that heavy
-                        coffee drinkers may reap health benefits.</h2>
-                    <p class="life-storie-para">
-                        It is a paradisematic country, in which roasted parts of sentences
-                        fly into your mouth.
-                    </p>
-                    <span class="life-stories-date">October 9, 2018</span>
-                </div>
-            </div>
+        <div class="life-stories-container">
+          <div class="add">
+            <div class="life-storie-image life-storie-image-2"></div>
+            <span class="explore-mug">Read The Full Story</span>
+          </div>
+          <div class="add-2">
+            <h2 class="life-storie-title">
+              How long does a cup of coffee keep you awake?
+            </h2>
+            <p class="life-storie-para">
+              It is a paradisematic country, in which roasted parts. Vel qui et
+              ad voluptatem.
+            </p>
+            <span class="life-stories-date">October 9, 2018</span>
+          </div>
         </div>
+        <div class="life-stories-container">
+          <div class="add">
+            <div class="life-storie-image life-storie-image-3"></div>
+            <span class="explore-mug">Read The Full Story</span>
+          </div>
+          <div class="add-2">
+            <h2 class="life-storie-title">
+              Recent research suggests that heavy coffee drinkers may reap
+              health benefits.
+            </h2>
+            <p class="life-storie-para">
+              It is a paradisematic country, in which roasted parts of sentences
+              fly into your mouth.
+            </p>
+            <span class="life-stories-date">October 9, 2018</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="subscribe">
-            <div class="subscribe-info">
-                <div class="subscribe-content">
-                    <div class="feature-mug subscribe-content-mug">
-                        <span></span>
-                        <span>Sign Up And Get Free Coffee Bags</span>
-                        <span></span>
-                    </div>
-                    <h1 class="subscribe-update">Coffee Updates</h1>
-                    <form action="" class="subscribe-email">
-                        <input type="text" name="" value="" class="form-input"
-                            placeholder="customer@coffeestyle.io">
-                        <input type="submit" name="" value="Subscribe"
-                            class="form-submit">
-                    </form>
-                </div>
+      <div class="subscribe">
+        <div class="subscribe-info">
+          <div class="subscribe-content">
+            <div class="feature-mug subscribe-content-mug">
+              <span></span>
+              <span>Sign Up And Get Free Coffee Bags</span>
+              <span></span>
             </div>
+            <h1 class="subscribe-update">Coffee Updates</h1>
+            <form action="" class="subscribe-email">
+              <input
+                type="text"
+                name=""
+                value=""
+                class="form-input"
+                placeholder="customer@coffeestyle.io"
+              />
+              <input
+                type="submit"
+                name=""
+                value="Subscribe"
+                class="form-submit"
+              />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="footer">
-        <div class="footer-info">
-            <div class="footer-title">
-                <h2>CoffeeStyle.</h2>
-            </div>
-            <div class="footer-title-content">
-                <p>Delivering the best coffee life since 1996. From coffee geeks to
-                    the
-                    real ones.</p>
-                <span>CoffeeStyle Inc. © 1996</span>
-            </div>
-            <div class="footer-title-menu">
-                <h2>Menu</h2>
-            </div>
-            <ul class="footer-title-list">
-                <li>Home</li>
-                <li>Our Products</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>StyleGuide</li>
-            </ul>
-            <div class="footer-title-follow">
-                <h2>Follow Us</h2>
-            </div>
-            <ul class="footer-title-follow-list">
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Pinterest</li>
-                <li>Twitter</li>
-            </ul>
-            <div class="footer-title-contact">
-                <h2>Contact Us</h2>
-            </div>
-
-            <div class="footer-title-contact-info">
-                <div>
-                    <p>We're Always Happy to Help</p>
-                    <h2>us@coffeestyle.io</h2>
-                </div>
-                <span>Powered by Webflow</span>
-            </div>
-
+      <div class="footer-info">
+        <div class="footer-title">
+          <h2>CoffeeStyle.</h2>
         </div>
+        <div class="footer-title-content">
+          <p>
+            Delivering the best coffee life since 1996. From coffee geeks to the
+            real ones.
+          </p>
+          <span>CoffeeStyle Inc. © 1996</span>
+        </div>
+        <div class="footer-title-menu">
+          <h2>Menu</h2>
+        </div>
+        <ul class="footer-title-list">
+          <li>Home</li>
+          <li>Our Products</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>StyleGuide</li>
+        </ul>
+        <div class="footer-title-follow">
+          <h2>Follow Us</h2>
+        </div>
+        <ul class="footer-title-follow-list">
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Pinterest</li>
+          <li>Twitter</li>
+        </ul>
+        <div class="footer-title-contact">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="footer-title-contact-info">
+          <div>
+            <p>We're Always Happy to Help</p>
+            <h2>us@coffeestyle.io</h2>
+          </div>
+          <span>Powered by Webflow</span>
+        </div>
+      </div>
     </div>
 
     <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>
