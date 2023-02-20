@@ -900,7 +900,7 @@ body {
   }
 
   .header-menu {
-    flex-basis: 10%;
+    margin-left: 20px;
     display: flex;
     justify-content: flex-end;
   }
