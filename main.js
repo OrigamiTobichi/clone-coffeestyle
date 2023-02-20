@@ -28,9 +28,8 @@ line.style.left = tab.offsetLeft + "px";
 tabs.forEach(function (tab) {
   tab.addEventListener("click", function () {
     $(".header-item.active").classList.remove("active");
-    this.classList.add("active");
-
     line.style.width = this.offsetWidth + "px";
     line.style.left = this.offsetLeft + "px";
+    this.classList.add("active");
   });
 });

@@ -62,49 +62,19 @@ body {
 }
 
 .header-item {
-  color: #1d1f2e;
-  padding: 10px;
+  color: #a8a9b4;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
   line-height: 18px;
-  list-style: none;
   position: relative;
-  background-color: #fff;
-  opacity: 0.6;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom: 4px solid transparent;
   text-transform: uppercase;
   transition: all ease 0.4s;
 }
-
 .header-item:hover {
-  opacity: 1;
-  border-color: rgb(196, 186, 186);
-  background-color: #ebebf0;
+  color: #382b26;
 }
-
-.header-item.active {
-  opacity: 1;
-}
-
-.header-tabs {
-  position: relative;
-}
-
-.header-tabs .line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background-color: #1d1f2e;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
 .header-cart {
   color: #8a8a92;
   font-size: 13px;
@@ -890,6 +860,9 @@ body {
     animation: slideDown ease-in-out 0.5s;
     z-index: -1;
   }
+  .line {
+    display: none;
+  }
 
   @keyframes slideDown {
     0% {
@@ -920,7 +893,7 @@ body {
   }
 
   .header {
-    padding: 25px 40px;
+    padding: 20px 40px;
     width: 100%;
     position: relative;
     z-index: 999;
@@ -1192,5 +1165,42 @@ body {
     align-items: center;
     align-items: flex-start;
     margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .header-item {
+    color: #1d1f2e;
+    padding: 10px;
+    opacity: 0.6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 4px solid transparent;
+  }
+  .header-item:hover {
+    opacity: 1;
+    border-color: rgb(196, 186, 186);
+    background-color: #ebebf0;
+  }
+  .header-item.active {
+    opacity: 1;
+  }
+
+  .header-tabs {
+    position: relative;
+  }
+
+  .header-tabs .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #1d1f2e;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .header-expanded {
+    display: none;
   }
 }
